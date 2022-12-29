@@ -1,3 +1,4 @@
+_G.Key = "" --สามารถใส่คีย์ได้
 _G.PHC = Color3.fromRGB(0,255,0)
 local Logo = ("9815319440")
 _G.PHH = "POOH HUB | Key"
@@ -300,8 +301,7 @@ register_key = Text
 			Main:TweenSize(UDim2.new(0,0,0,0),"Out","Quad",0.4,true)
 			wait(0.4)
 			SysemKeyyy:Destroy()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TEWIOCK/POOHHUB/blob/main/ProjectPOOHHUB.V2.lua"))() --need key
-			print("PH")
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/TEWIOCK/POOHHUB/blob/main/ProjectPOOHHUB.V2.lua"))()
 		end
 	end
 end
