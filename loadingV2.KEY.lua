@@ -300,7 +300,7 @@ register_key = Text
 			Main:TweenSize(UDim2.new(0,0,0,0),"Out","Quad",0.4,true)
 			wait(0.4)
 			SysemKeyyy:Destroy()
-			loadstring(game:HttpGet("https://raw.githubusercontent.com/TEWIOCK/POOHHUB/blob/main/ProjectPOOHHUB.V2.lua"))() --need key
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TEWIOCK/POOHHUB/blob/main/ProjectPOOHHUB.V2.lua"))() --need key
 			print("PH")
 		end
 	end
