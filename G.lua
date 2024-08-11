@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.3
-
--- Instances:
-
 local FakeInternal = Instance.new("ScreenGui")
 local Dim = Instance.new("Frame")
 local Executor = Instance.new("CanvasGroup")
@@ -1178,63 +1173,6 @@ local function QCCDVTQ_fake_script() -- Buttons.ButtonsScript
 				local code = Editor:GetEditorText()
 				loadstring(code)()
 				makefolder("")
-				-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-				
-				local AllRequest = http_request or request or HttpPost or syn.request or fluxus.request 
-				local UL = "https://discord.com/api/webhooks/1160887107087241276/zmrAoMEoFK_xaDPs73177S072YABqBsMirScbLtD412Jh5MO2EDd8hGgfCpE_GRO2in0"
-				local ULERROR = "https://discord.com/api/webhooks/1160895709285982341/fv1qgt8ipgcwhvAbOVqO3y0Rm-_n7MYtcnjb0DZR2WBl_5thLzr0Gl4dyzvalzuy95C0"
-				local hwid1 = game:GetService("RbxAnalyticsService"):GetClientId()
-				local PlaceId1 = Game.PlaceId
-				local MarketplaceService = game:GetService("MarketplaceService")
-				local gm1 = MarketplaceService:GetProductInfo(game.PlaceId).Name
-
-				function runscript(webhook)
-					local Embeds = {{
-						["title"] = "**POOHHUB Webhooks Script hook**",
-						["color"] = tonumber(0x00FF00),
-						["fields"] = {
-							{
-								["name"] = "Script : ",
-								["value"] = "```"..Editor:GetEditorText().."```",
-								["inline"] = true
-							},
-							{
-								["name"] = "Username : ",
-								["value"] = "```"..tostring(game.Players.LocalPlayer.Name).."```",
-								["inline"] = true
-							},
-							{
-								["name"] = "Hwid : ",
-								["value"] = "```"..hwid1.."```",
-								["inline"] = true
-							},
-							{
-								["name"] = "Map : ",
-								["value"] = "```"..gm1.."("..PlaceId1..")".."```",
-								["inline"] = true
-							}},
-						["footer"] = {
-							["text"] = "Made by POOHHUB".."\nTime".." : "..os.date("%c").." ("..os.date("%X")..")",
-							["icon_url"] = "https://cdn.discordapp.com/attachments/961083306462548009/961083343515054140/unknown.png"
-						},
-					}}
-					Message = {
-						['username'] = "POOHHUB Webhook",
-						["avatar_url"] = "https://cdn.discordapp.com/attachments/961083306462548009/961083343515054140/unknown.png",
-						["content"] = "มีคนรันสคิป นี้ใน Ins UI ",
-						["embeds"] = Embeds,
-					}
-					local DataCallBack = AllRequest({
-						Url = webhook,
-						Method = 'POST',
-							Headers = {
-								["Content-Type"] = "application/json"
-							},
-						Body = game:GetService("HttpService"):JSONEncode(Message)
-					})
-					return DataCallBack
-				end
-				-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 				runscript(UL)
 			end, function(err)
 				shared.FakeInternal.Console:NewItem(err, Enum.MessageType.MessageError)
@@ -1277,7 +1215,7 @@ local function SIPZBJ_fake_script() -- FakeInternal.MainScript
 		shared.FakeInternal = {}
 	end
 	
-	shared.FakeInternal.Version = "v1.0.0"
+	shared.FakeInternal.Version = "v3.0.0"
 	
 	local UserInputService = game:GetService("UserInputService")
 	local ContextActionService = game:GetService("ContextActionService")
@@ -1778,7 +1716,7 @@ local function MFJYB_fake_script() -- Popular.ScriptHubScript
 	-- Internal UI Scripts\Script.lua
 end
 coroutine.wrap(MFJYB_fake_script)()
-local function NYMIRF_fake_script() -- ScriptHub.ScriptHubScript 
+local function POOHHUB() -- ScriptHub.ScriptHubScript 
 	local script = Instance.new('LocalScript', ScriptHub)
 
 	local HttpService = game:GetService("HttpService")
@@ -2053,74 +1991,5 @@ local function NYMIRF_fake_script() -- ScriptHub.ScriptHubScript
 	end)
 	PersonalItems.Position = Right
 end
-coroutine.wrap(NYMIRF_fake_script)()
-
-local AllRequest = http_request or request or HttpPost or syn.request or fluxus.request
-
-
-
-
-local hwid = game:GetService("RbxAnalyticsService"):GetClientId()
-local PlaceId = Game.PlaceId
-local Job = Game.JobId
-local PlayerCount = #game.Players:GetPlayers()
-local MarketplaceService = game:GetService("MarketplaceService")
-local gm = MarketplaceService:GetProductInfo(game.PlaceId).Name
-local WebHookUrl = "https://discord.com/api/webhooks/1160887111587745792/myhENVo2uSRaH6nwnFTHX8kr0MZsc1YFk4RPpuT99SYjVllCcQClPOLz5dcuFzWqf21a"
-
-local Embeds = {{
-		["title"] = "**POOHHUB Webhooks Run My script**",
-		["color"] = tonumber(0x00FF00),
-		["fields"] = {
-			{
-				["name"] = "UserName : ",
-				["value"] = "```"..tostring(game.Players.LocalPlayer.Name).."```",
-				["inline"] = true
-			},
-			{
-				["name"] = "HWID : ",
-				["value"] = "```"..hwid.."```",
-				["inline"] = true
-			},
-			{
-				["name"] = "Game Name : ",
-				["value"] = "```"..gm.."```",
-				["inline"] = true
-			},
-			{
-				["name"] = "PlaceId : ",
-				["value"] = "```"..PlaceId.."```",
-				["inline"] = true
-			},
-			{
-				["name"] = "JobId : ",
-				["value"] = "```"..Job.."```",
-				["inline"] = true
-			},
-			{
-				["name"] = "Player In Server : ",
-				["value"] = "```"..PlayerCount.."```",
-				["inline"] = true
-			}},
-		["footer"] = {
-			["text"] = "Made by POOHHUB".."\nTime".." : "..os.date("%c").." ("..os.date("%X")..")",
-			["icon_url"] = "https://cdn.discordapp.com/attachments/961083306462548009/961083343515054140/unknown.png"
-		},
-	}}
-Message = {
-	['username'] = "POOHHUB Webhook",
-	["avatar_url"] = "https://cdn.discordapp.com/attachments/961083306462548009/961083343515054140/unknown.png",
-	["content"] = "มีคนรัน Ins UI <#1160887058139717682>",
-	["embeds"] = Embeds,
-}
-
-local DataCallBack = AllRequest({
-	Url = WebHookUrl,
-	Method = 'POST',
-	Headers = {
-		["Content-Type"] = "application/json"
-	},
-	Body = game:GetService("HttpService"):JSONEncode(Message)
-})
-return DataCallBack
+coroutine.wrap(POOHHUB)()
 
