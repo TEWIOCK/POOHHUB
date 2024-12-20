@@ -1,0 +1,5 @@
+loadstring(game:HttpGet('https://raw.githubusercontent.com/xZPUHigh/Spectrum-Cloud/main/Loader.lua'))()
+wait(4)
+game:GetService("CoreGui").THUNDERZHUB:destroy()
+game:GetService("CoreGui").ImageButton:destroy()
+wait(4)
