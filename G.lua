@@ -1,3 +1,3 @@
 print("Execute Level "..getthreadidentity())
 
-loadstrint(game:HttpGet("https://raw.githubusercontent.com/TEWIOCK/POOHHUB/refs/heads/main/UI"))()
+loadstring(game:HttpGet(string.format('https://raw.githubusercontent.com/TEWIOCK/POOHHUB/refs/heads/main/UI')))(); 
