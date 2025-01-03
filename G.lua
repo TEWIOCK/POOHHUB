@@ -1,3 +1,5 @@
+_G.UNC = false
+
 print("Execute Level "..getthreadidentity())
 
 print("BY POOHHUB")
